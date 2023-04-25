@@ -40,7 +40,12 @@ INSTALLED_APPS = [
 
     # User defined apps
     'cookbook.ingredients',
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    "SCHEMA": "cookbook.schema.schema"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
